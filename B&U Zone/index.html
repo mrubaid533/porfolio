@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>B&U Zone | Premium Mobile Accessories & Tech Gear Pakistan</title>
+  <meta name="description" content="Shop high-performance wireless earbuds, GaN fast chargers, magnetic power banks, braided cables & shockproof phone cases at B&U Zone. Founded by Bilal & Ubaid in Lahore. Cash on Delivery nationwide.">
+  <meta name="keywords" content="B&U Zone, mobile accessories Lahore, fast chargers Pakistan, earbuds, power bank, phone cases, Bilal and Ubaid">
+  <meta name="author" content="Bilal and Ubaid - B&U Zone">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B&U Zone | Your Ultimate Tech Connection">
+  <meta property="og:description" content="Catchy, affordable & tested mobile accessories. Cash on delivery across Pakistan with same-day Lahore dispatch.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="badge-flash"><i class="fa-solid fa-bolt"></i> LAHORE FLASH DEAL</span>
+        <span class="announcement-text">Use coupon code <strong class="code-highlight">BUZONE15</strong> for 15% OFF your entire order!</span>
+      </div>
+      <div class="announcement-right">
+        <span><i class="fa-solid fa-truck-fast"></i> Free Delivery over Rs. 2,500</span>
+        <span class="sep">|</span>
+        <span><i class="fa-solid fa-hand-holding-dollar"></i> Cash on Delivery Available</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Main Navigation Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container nav-container">
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open mobile navigation">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <div class="logo-img-frame">
+          <img src="assets/images/logo.jpg" alt="B&U Zone Official Logo" class="brand-logo-img">
+        </div>
+        <div class="logo-text-wrap">
+          <span class="brand-name">B&U <span class="brand-accent">ZONE</span></span>
+          <span class="brand-tagline">Mobile Accessories</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="mobile-nav-header">
+          <div class="logo-img-frame sm">
+            <img src="assets/images/logo.jpg" alt="B&U Zone Logo" class="brand-logo-img sm">
+          </div>
+          <span>B&U Zone Navigation</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-item active"><i class="fa-solid fa-house nav-mobile-icon"></i> Home</a></li>
+          <li><a href="#shop" class="nav-item"><i class="fa-solid fa-bag-shopping nav-mobile-icon"></i> Shop</a></li>
+          <li><a href="#categories" class="nav-item"><i class="fa-solid fa-layer-group nav-mobile-icon"></i> Categories</a></li>
+          <li><a href="#bestsellers" class="nav-item"><i class="fa-solid fa-fire nav-mobile-icon"></i> Best Sellers</a></li>
+          <li><a href="#about" class="nav-item"><i class="fa-solid fa-users nav-mobile-icon"></i> About Us</a></li>
+          <li><a href="#contact" class="nav-item"><i class="fa-solid fa-headset nav-mobile-icon"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="https://wa.me/923001234567" target="_blank" class="btn btn-whatsapp-full">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Bilal & Ubaid
+          </a>
+        </div>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <div class="search-box-desktop">
+          <input type="text" id="desktopSearchInput" placeholder="Search chargers, earbuds..." autocomplete="off">
+          <button class="search-submit-btn" id="desktopSearchBtn" aria-label="Search items">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <button class="action-icon-btn mobile-search-trigger" id="mobileSearchTrigger" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Wishlist -->
+        <button class="action-icon-btn" id="wishlistHeaderBtn" aria-label="View Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-counter" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="action-cart-btn" id="cartHeaderBtn" aria-label="Open shopping cart">
+          <div class="cart-icon-wrapper">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge-counter cart-badge" id="cartCount">0</span>
+          </div>
+          <span class="cart-btn-label">Cart (<span id="cartHeaderTotal">Rs. 0</span>)</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Live Search Overlay Drawer -->
+  <div class="search-drawer" id="searchDrawer">
+    <div class="container search-drawer-inner">
+      <div class="search-input-group">
+        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+        <input type="text" id="mobileSearchInput" placeholder="Search earbuds, 65W chargers, cases..." autofocus>
+        <button class="btn-clear-search" id="clearSearchBtn" aria-label="Clear search input">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="search-results-list" id="searchResultsList">
+        <!-- Results rendered dynamically via JS -->
+      </div>
+    </div>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-glow-blob hero-blob-1"></div>
+    <div class="hero-glow-blob hero-blob-2"></div>
+    <div class="container hero-grid">
+      
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Lahore's #1 Rated Mobile Gear Hub</span>
+        </div>
+        <h1 class="hero-title">
+          Your Ultimate <br>
+          <span class="hero-highlight">Tech Connection</span>
+        </h1>
+        <p class="hero-subtitle">
+          Engineered for power, built for daily life. Premium wireless earbuds, GaN ultra-fast chargers, magnetic power banks, and military-grade phone cases hand-tested by Bilal & Ubaid.
+        </p>
+
+        <!-- Hero CTAs -->
+        <div class="hero-cta-group">
+          <a href="#shop" class="btn btn-primary btn-lg">
+            <span>Explore Collection</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#dealSection" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-fire"></i>
+            <span>Today's Flash Deal</span>
+          </a>
+        </div>
+
+        <!-- Trust Features Grid -->
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="trust-text">
+              <strong>100% Genuine</strong>
+              <span>Verified Hardware</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div class="trust-text">
+              <strong>Same-Day Dispatch</strong>
+              <span>Lahore & Nationwide</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+            <div class="trust-text">
+              <strong>Cash On Delivery</strong>
+              <span>Pay At Your Doorstep</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-image-col">
+        <div class="hero-card-display">
+          <div class="hero-tag-floating tag-top">
+            <i class="fa-solid fa-bolt text-yellow"></i>
+            <div>
+              <strong>Super Fast 65W GaN</strong>
+              <span>0 to 70% in 25 mins</span>
+            </div>
+          </div>
+          <div class="hero-img-wrapper">
+            <img src="assets/images/hero.jpg" alt="B&U Zone Premium Mobile Accessories Collection" class="hero-main-img" id="heroMainImage">
+            <div class="hero-img-overlay-glow"></div>
+          </div>
+          <div class="hero-tag-floating tag-bottom">
+            <div class="avatar-stack">
+              <span class="user-avatar"><i class="fa-solid fa-user"></i></span>
+              <span class="user-avatar text-yellow"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <div>
+              <strong>15,000+ Happy Customers</strong>
+              <span>4.9/5 Average Rating in Pakistan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Grid Section -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Browse By Category</span>
+        <h2 class="section-title">Built For Every Tech Need</h2>
+        <p class="section-desc">Tap a category to instantly browse verified gadgets with high durability and fast performance.</p>
+      </div>
+
+      <div class="category-grid" id="categoryGrid">
+        
+        <!-- Category Card 1: Audio & Earbuds -->
+        <div class="category-card" data-category="audio" onclick="filterByCategory('audio')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-headphones-simple"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Audio & Earbuds</h3>
+            <span class="category-count">ANC, Hi-Res & Gaming Earbuds</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 2: Fast Chargers -->
+        <div class="category-card" data-category="chargers" onclick="filterByCategory('chargers')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-charging-station"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Fast Chargers</h3>
+            <span class="category-count">33W, 65W & 100W GaN Adapters</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 3: Power Banks -->
+        <div class="category-card" data-category="powerbanks" onclick="filterByCategory('powerbanks')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-battery-three-quarters"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Power Banks</h3>
+            <span class="category-count">Magnetic Wireless & 20,000mAh</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 4: Braided Cables -->
+        <div class="category-card" data-category="cables" onclick="filterByCategory('cables')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-cable-car"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Data & Charging Cables</h3>
+            <span class="category-count">Heavy-Duty 100W Braided Cord</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 5: Screen & Lens Protectors -->
+        <div class="category-card" data-category="protection" onclick="filterByCategory('protection')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Screen Protectors</h3>
+            <span class="category-count">9H Tempered & Privacy Shields</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 6: Phone Cases -->
+        <div class="category-card" data-category="cases" onclick="filterByCategory('cases')">
+          <div class="category-icon-box">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">Phone Cases</h3>
+            <span class="category-count">Armor Drop-Proof & Sleek Frosted</span>
+          </div>
+          <div class="category-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash Deal of the Day Banner -->
+  <section class="flash-deal-section" id="dealSection">
+    <div class="container">
+      <div class="deal-card">
+        <div class="deal-content">
+          <div class="deal-badge-row">
+            <span class="badge-flash"><i class="fa-solid fa-fire"></i> LIMITED TIME OFFER</span>
+            <span class="deal-save-pill">SAVE 38% TODAY</span>
+          </div>
+          <h2 class="deal-title">Bilal & Ubaid's Power Bundle Pro</h2>
+          <p class="deal-description">
+            Get the full powerhouse kit: 65W GaN Tri-Port Fast Charger + 100W LED Wattage Braided Cable + 20,000mAh Magnetic Powerbank. The ultimate setup for work, college, and travel.
+          </p>
+
+          <div class="deal-pricing">
+            <span class="deal-sale-price">Rs. 8,499</span>
+            <span class="deal-old-price">Rs. 13,800</span>
+            <span class="deal-discount-tag">Save Rs. 5,301</span>
+          </div>
+
+          <!-- Countdown Timer -->
+          <div class="countdown-wrapper">
+            <span class="countdown-label">Flash Sale Ends In:</span>
+            <div class="countdown-boxes" id="countdownClock">
+              <div class="count-box"><span class="count-num" id="cdHours">07</span><span class="count-lbl">Hours</span></div>
+              <span class="cd-colon">:</span>
+              <div class="count-box"><span class="count-num" id="cdMinutes">42</span><span class="count-lbl">Mins</span></div>
+              <span class="cd-colon">:</span>
+              <div class="count-box"><span class="count-num" id="cdSeconds">18</span><span class="count-lbl">Secs</span></div>
+            </div>
+          </div>
+
+          <!-- Limited Stock Progress -->
+          <div class="stock-progress-wrap">
+            <div class="stock-labels">
+              <span>Hurry! Stock is selling fast</span>
+              <strong class="text-yellow">Only 14 left in Lahore stock</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <div class="deal-cta-row">
+            <button class="btn btn-primary btn-lg" onclick="addBundleToCart()">
+              <i class="fa-solid fa-cart-plus"></i> Claim This Bundle
+            </button>
+            <button class="btn btn-secondary btn-lg" onclick="openQuickOrderModal('bundle')">
+              <i class="fa-solid fa-bolt"></i> 1-Click COD Order
+            </button>
+          </div>
+        </div>
+
+        <div class="deal-image-col">
+          <div class="deal-image-frame">
+            <img src="assets/images/hero.jpg" alt="Bilal & Ubaid's Power Bundle Pro" class="deal-img">
+            <span class="deal-floating-badge">Verified Top Pick</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products / Shop Catalog Section -->
+  <section class="section products-section" id="shop">
+    <div class="container">
+      
+      <div class="products-header-row">
+        <div>
+          <span class="section-tag" id="bestsellers">Catalog & Best Sellers</span>
+          <h2 class="section-title">Tested By Bilal & Ubaid</h2>
+          <p class="section-desc">Every single accessory passes our strict voltage, heat, and durability test before dispatch.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="catalog-filter-tabs" id="filterTabs">
+          <button class="filter-tab-btn active" data-filter="all">All Items</button>
+          <button class="filter-tab-btn" data-filter="audio">Earbuds</button>
+          <button class="filter-tab-btn" data-filter="chargers">Chargers</button>
+          <button class="filter-tab-btn" data-filter="powerbanks">Power Banks</button>
+          <button class="filter-tab-btn" data-filter="cables">Cables</button>
+          <button class="filter-tab-btn" data-filter="protection">Protectors</button>
+          <button class="filter-tab-btn" data-filter="cases">Cases</button>
+        </div>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Products dynamically rendered by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose B&U Zone Section -->
+  <section class="section why-us-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">The B&U Zone Promise</span>
+        <h2 class="section-title">Why Thousands of Pakistanis Trust Us</h2>
+        <p class="section-desc">We eliminate the fear of counterfeit gadgets and broken promises.</p>
+      </div>
+
+      <div class="perks-grid">
+        <div class="perk-card">
+          <div class="perk-icon-circle">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="perk-title">100% Genuine Tech</h3>
+          <p class="perk-desc">No low-grade copies. We source authentic Grade-A components with safe overcharge and short-circuit protection.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-circle">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="perk-title">Lahore Same-Day Express</h3>
+          <p class="perk-desc">Order before 3:00 PM in Lahore for guaranteed same-day rider delivery. 2-3 days delivery across all Pakistan cities.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-circle">
+            <i class="fa-solid fa-rotate-left"></i>
+          </div>
+          <h3 class="perk-title">7-Day Easy Replacement</h3>
+          <p class="perk-desc">Not completely satisfied or facing any defect? Bilal and Ubaid will replace your unit with zero annoying questions.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-circle">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="perk-title">Direct WhatsApp Support</h3>
+          <p class="perk-desc">Need cable compatibility advice? Talk directly to our knowledgeable team anytime on WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section (Story of Bilal & Ubaid) -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-image-col">
+          <div class="about-image-container">
+            <img src="assets/images/founders.jpg" alt="Bilal and Ubaid - Founders of B&U Zone" class="founders-img">
+            <div class="founders-badge">
+              <img src="assets/images/logo.jpg" alt="Official B&U Zone Seal" style="width: 42px; height: 42px; border-radius: 8px; border: 1.5px solid #00d2ff; object-fit: cover;">
+              <div>
+                <strong>Bilal & Ubaid</strong>
+                <span>Official B&U Zone Founders</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <span class="section-tag">Meet The Founders</span>
+          <h2 class="section-title">Our Story: Built in Lahore with Passion</h2>
+          <div class="about-body">
+            <p>
+              Hi there! We are <strong>Bilal and Ubaid</strong>. Like most mobile users in Pakistan, we were sick and tired of cheap cables that snapped after two weeks, chargers that heated up dangerously, and counterfeit earbuds that sounded like a tin can.
+            </p>
+            <p>
+              In 2023, right from the bustling tech hub of <strong>Hafeez Centre & Gulberg, Lahore</strong>, we founded <strong>B&U Zone</strong> with a singular mission:
+            </p>
+            <div class="mission-callout">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>
+                "Bring durable, high-performance, and stylish mobile accessories to everyday consumers at prices that don't hurt their wallet, backed by real customer care."
+              </p>
+            </div>
+            <p>
+              Every single product you see on this website is personally tested by us on multiple iPhones, Samsungs, and Android flagships. We test charging speeds, heat dissipation, and drop endurance so that you can order with 100% peace of mind.
+            </p>
+          </div>
+
+          <div class="about-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">25,000+</span>
+              <span class="stat-label">Orders Delivered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Customer Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Hand-Tested Gear</span>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="https://wa.me/923001234567" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat with Bilal & Ubaid
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Social Proof -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Real Customer Feedback</span>
+        <h2 class="section-title">Loved by Tech Lovers Across Pakistan</h2>
+        <p class="section-desc">See what our customers in Lahore, Karachi, and Islamabad are saying about B&U Zone gear.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Ordered the 65W GaN charger at 11 AM in Gulberg Lahore and got it by 3 PM! Powers my MacBook Pro and S24 Ultra simultaneously without getting hot. Bilal Bhai was super responsive on WhatsApp."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">HA</div>
+            <div>
+              <strong class="reviewer-name">Hamza Ali</strong>
+              <span class="reviewer-loc"><i class="fa-solid fa-location-dot"></i> Lahore (Gulberg III)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The 100W braided cable with real-time wattage display is insane. You can literally see how many watts your phone is taking. Unmatched build quality for this price."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">ZK</div>
+            <div>
+              <strong class="reviewer-name">Zainab Khan</strong>
+              <span class="reviewer-loc"><i class="fa-solid fa-location-dot"></i> Islamabad (F-7)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "B&U Zone's magnetic power bank saved my life during travel. It snaps firmly onto my iPhone 15 and the LED percentage is crisp and accurate. Delivered via COD in Karachi smoothly!"
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">OF</div>
+            <div>
+              <strong class="reviewer-name">Osman Farooq</strong>
+              <span class="reviewer-loc"><i class="fa-solid fa-location-dot"></i> Karachi (DHA)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter & Special VIP Perks -->
+  <section class="newsletter-section">
+    <div class="container newsletter-card">
+      <div class="newsletter-text">
+        <span class="badge-flash"><i class="fa-solid fa-sparkles"></i> VIP ACCESS</span>
+        <h3 class="newsletter-title">Join the B&U Zone Tech Club</h3>
+        <p class="newsletter-desc">Get secret flash sale discounts, new gadget release drops, and battery care tips directly in your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+        <button type="submit" class="btn btn-primary">
+          <span>Subscribe Now</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact & Lahore Location Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Visit Our Store or Chat With Us</h2>
+        <p class="section-desc">We love talking tech! Drop by our Lahore store or message Bilal and Ubaid directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="contact-card-title">Lahore Tech Outlet</h3>
+          <p class="contact-card-text">
+            Shop #42, 2nd Floor, Hafeez Centre<br>
+            Main Boulevard, Gulberg III, Lahore, Pakistan
+          </p>
+          <span class="contact-note">Open Monday - Saturday: 11:00 AM - 10:00 PM</span>
+        </div>
+
+        <div class="contact-card highlight-card">
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="contact-card-title">Instant WhatsApp Help</h3>
+          <p class="contact-card-text">
+            Direct customer assistance with Bilal & Ubaid.<br>
+            +92 300 1234567 / +92 321 7654321
+          </p>
+          <a href="https://wa.me/923001234567" target="_blank" class="btn btn-whatsapp-full btn-sm">
+            <i class="fa-brands fa-whatsapp"></i> Message Us Now
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3 class="contact-card-title">Customer Care Email</h3>
+          <p class="contact-card-text">
+            support@banduzone.pk<br>
+            orders@banduzone.pk
+          </p>
+          <span class="contact-note">Average response time: Under 1 hour</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide-Out Shopping Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title-wrap">
+        <i class="fa-solid fa-cart-shopping text-yellow"></i>
+        <h3>Your Cart (<span id="cartDrawerCount">0</span>)</h3>
+      </div>
+      <button class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="free-shipping-bar-wrap">
+      <div class="shipping-info-text">
+        <i class="fa-solid fa-truck-fast text-yellow"></i>
+        <span id="shippingProgressText">Add Rs. 2,500 more for <strong>FREE DELIVERY</strong></span>
+      </div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable Container -->
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Items dynamically populated via JS -->
+      <div class="empty-cart-view" id="emptyCartView">
+        <i class="fa-solid fa-bag-shopping empty-cart-icon"></i>
+        <h4>Your cart is empty</h4>
+        <p>Looks like you haven't added any tech accessories yet.</p>
+        <button class="btn btn-primary" onclick="closeCart(); location.href='#shop'">Start Shopping</button>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Checkout Summary -->
+    <div class="cart-drawer-footer" id="cartFooter">
+      
+      <!-- Promo Code Box -->
+      <div class="promo-box">
+        <input type="text" id="promoInput" placeholder="Promo code (try BUZONE15)" uppercase>
+        <button class="btn-apply-promo" id="applyPromoBtn" onclick="applyPromoCode()">Apply</button>
+      </div>
+      <div class="promo-feedback" id="promoFeedback"></div>
+
+      <!-- Pricing Summary Breakdown -->
+      <div class="cart-summary-breakdown">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="summarySubtotal">Rs. 0</span>
+        </div>
+        <div class="summary-line" id="discountLine" style="display: none;">
+          <span class="text-yellow">Discount (15%)</span>
+          <span class="text-yellow" id="summaryDiscount">- Rs. 0</span>
+        </div>
+        <div class="summary-line">
+          <span>Delivery Charge (Pakistan)</span>
+          <span id="summaryShipping">Rs. 200</span>
+        </div>
+        <div class="summary-line total-line">
+          <strong>Grand Total</strong>
+          <strong class="total-amount" id="summaryGrandTotal">Rs. 0</strong>
+        </div>
+      </div>
+
+      <!-- Checkout Actions -->
+      <button class="btn btn-primary btn-checkout-full" id="checkoutBtn" onclick="openCheckoutModal()">
+        <span>Proceed to Fast Checkout</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <div class="cart-trust-badges">
+        <span><i class="fa-solid fa-lock text-yellow"></i> 100% Safe Checkout</span>
+        <span><i class="fa-solid fa-shield-halved text-yellow"></i> 7-Day Guarantee</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Order & Cash On Delivery Modal -->
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-modal-content">
+      <button class="modal-close-btn" onclick="closeCheckoutModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="checkout-modal-header">
+        <div class="logo-img-frame sm">
+          <img src="assets/images/logo.jpg" alt="B&U Zone Logo" class="brand-logo-img sm">
+        </div>
+        <div>
+          <h3>Quick Cash On Delivery Order</h3>
+          <p>No credit card required. Pay cash at your doorstep when rider arrives!</p>
+        </div>
+      </div>
+
+      <div class="checkout-order-summary-box" id="checkoutModalSummary">
+        <!-- Filled by JS -->
+      </div>
+
+      <form id="checkoutForm" onsubmit="handleOrderSubmission(event)">
+        <div class="form-group">
+          <label for="custName"><i class="fa-solid fa-user"></i> Full Name *</label>
+          <input type="text" id="custName" placeholder="e.g. Ali Ahmed" required>
+        </div>
+
+        <div class="form-group">
+          <label for="custPhone"><i class="fa-solid fa-phone"></i> Mobile / WhatsApp Number *</label>
+          <input type="tel" id="custPhone" placeholder="e.g. 0300 1234567" required>
+          <small class="field-hint">We will send tracking updates and delivery confirmation to this number.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="custAddress"><i class="fa-solid fa-house"></i> Full Delivery Address *</label>
+          <input type="text" id="custAddress" placeholder="House / Flat #, Street, Area name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="custCity"><i class="fa-solid fa-city"></i> City *</label>
+            <select id="custCity" required>
+              <option value="Lahore" selected>Lahore (Same-Day / Next-Day)</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Rawalpindi">Rawalpindi</option>
+              <option value="Faisalabad">Faisalabad</option>
+              <option value="Multan">Multan</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Gujranwala">Gujranwala</option>
+              <option value="Sialkot">Sialkot</option>
+              <option value="Other">Other City (All Pakistan)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="custPayment"><i class="fa-solid fa-wallet"></i> Payment Method</label>
+            <select id="custPayment">
+              <option value="Cash on Delivery (COD)" selected>Cash on Delivery (COD)</option>
+              <option value="JazzCash">JazzCash Transfer</option>
+              <option value="EasyPaisa">EasyPaisa Transfer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="custNotes"><i class="fa-regular fa-comment-dots"></i> Special Delivery Notes (Optional)</label>
+          <input type="text" id="custNotes" placeholder="e.g. Call before arrival, leave with security">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-checkout-full" id="confirmOrderBtn">
+          <i class="fa-solid fa-check-circle"></i>
+          <span>Confirm Cash on Delivery Order (<span id="modalFinalPayable">Rs. 0</span>)</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Confirmation Modal -->
+  <div class="order-success-modal" id="orderSuccessModal">
+    <div class="order-success-card">
+      <div class="success-icon-wrap">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="success-title">Order Placed Successfully!</h3>
+      <p class="success-subtitle">Shukriya for choosing B&U Zone. Bilal & Ubaid's team is preparing your package.</p>
+      
+      <div class="order-receipt-box">
+        <div class="receipt-row">
+          <span>Tracking / Order ID:</span>
+          <strong class="text-yellow" id="successOrderId">BUZ-98421</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Recipient:</span>
+          <strong id="successCustomerName">Ali Ahmed</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Delivery Address:</span>
+          <span id="successDeliveryAddress">Gulberg III, Lahore</span>
+        </div>
+        <div class="receipt-row">
+          <span>Total Payable (COD):</span>
+          <strong class="receipt-total" id="successOrderTotal">Rs. 3,499</strong>
+        </div>
+      </div>
+
+      <div class="success-action-btns">
+        <a href="#" id="successWhatsAppLink" target="_blank" class="btn btn-whatsapp-full">
+          <i class="fa-brands fa-whatsapp"></i> Confirm via WhatsApp with Bilal
+        </a>
+        <button class="btn btn-secondary btn-full" onclick="closeOrderSuccessModal()">
+          Continue Browsing Store
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Product Modal -->
+  <div class="quick-view-modal" id="quickViewModal">
+    <div class="quick-view-content" id="quickViewContent">
+      <!-- Populated via JS -->
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon" id="toastIcon"><i class="fa-solid fa-check"></i></div>
+    <div class="toast-message" id="toastMessage">Item added to cart!</div>
+  </div>
+
+  <!-- Floating WhatsApp Helpline Button -->
+  <a href="https://wa.me/923001234567?text=Hi%20Bilal%20%26%20Ubaid!%20I'm%20browsing%20B%26U%20Zone%20and%20have%20a%20question" 
+     target="_blank" 
+     class="floating-whatsapp" 
+     id="floatingWhatsApp" 
+     aria-label="Direct WhatsApp Chat with Bilal and Ubaid">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with Bilal & Ubaid</span>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top of page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo footer-brand-logo">
+            <div class="logo-img-frame md">
+              <img src="assets/images/logo.jpg" alt="B&U Zone Logo" class="brand-logo-img md">
+            </div>
+            <div class="logo-text-wrap">
+              <span class="brand-name">B&U <span class="brand-accent">ZONE</span></span>
+              <span class="brand-tagline">Mobile Accessories</span>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            Pakistan's trusted destination for reliable, high-speed mobile tech accessories. Hand-tested by founders Bilal and Ubaid for maximum safety, performance, and longevity.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/923001234567" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop All Gear</a></li>
+            <li><a href="#bestsellers">Best Sellers</a></li>
+            <li><a href="#about">About Bilal & Ubaid</a></li>
+            <li><a href="#dealSection">Today's Deals</a></li>
+            <li><a href="#contact">Contact & Store</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Popular Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#shop" onclick="filterByCategory('audio')">Wireless Earbuds (ANC)</a></li>
+            <li><a href="#shop" onclick="filterByCategory('chargers')">65W & 100W GaN Chargers</a></li>
+            <li><a href="#shop" onclick="filterByCategory('powerbanks')">Magnetic Power Banks</a></li>
+            <li><a href="#shop" onclick="filterByCategory('cables')">Fast Charging Cables</a></li>
+            <li><a href="#shop" onclick="filterByCategory('protection')">9H Tempered Protectors</a></li>
+            <li><a href="#shop" onclick="filterByCategory('cases')">Drop-Proof Armor Cases</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store & Support -->
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Lahore Store & Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot text-yellow"></i>
+              <span>Shop #42, 2nd Floor, Hafeez Centre, Main Boulevard Gulberg III, Lahore</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone text-yellow"></i>
+              <span>+92 300 1234567 / +92 321 7654321</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock text-yellow"></i>
+              <span>Mon - Sat: 11:00 AM - 10:00 PM (PKT)</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope text-yellow"></i>
+              <span>support@banduzone.pk</span>
+            </li>
+          </ul>
+          <div class="payment-methods-row">
+            <span class="pay-pill">Cash on Delivery</span>
+            <span class="pay-pill">JazzCash</span>
+            <span class="pay-pill">EasyPaisa</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom Strip -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 B&U Zone. Founded by Bilal & Ubaid. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Shipping & Delivery</a>
+          <span>•</span>
+          <a href="#">7-Day Replacement Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
